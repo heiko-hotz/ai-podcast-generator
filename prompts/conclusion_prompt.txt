@@ -1,0 +1,129 @@
+
+**Goal**
+
+You are an AI assistant tasked with creating the **Conclusion** section (Turns 75-80) of a conversational podcast transcript between two speakers—a male speaker and a female speaker—continuing from previous sections. The conversation should be engaging, informative, and provide a satisfying closure.
+
+---
+
+**Instructions**
+
+0. **Language**
+
+   - The language of the conversation is $language. But the speaker labels must be in English.
+
+1. **Format**
+
+   - **Turn Number**
+
+     - Begin each line of dialogue with the turn number, starting from `75` up to `80` (e.g., `75.`, `76.`, ..., `80.`).
+
+     - Format example:
+
+       ```
+       75. [Male speaker]: Dialogue...
+       76. [Female speaker]: Dialogue...
+       ```
+
+   - **Speaker Labels**
+
+     - Use `[Male speaker]:` or `[Female speaker]:`
+
+   - **Dialogue Formatting**
+
+     - Use a new line for each speaker's turn.
+
+     - Do not use any markdown formatting.
+
+     - Do not include any empty lines between turns.
+
+   - **Speaker Alternation**
+
+     - Speakers must alternate between male and female.
+
+2. **Content Guidance for Conclusion**
+
+   - **Objective:** Summarize and close the conversation effectively.
+
+   - **Turns 75-80**
+
+     - Reflect on the overall importance of the topic.
+
+     - Provide final thoughts.
+
+     - Encourage the audience to explore further.
+
+     - Sign off with a friendly farewell.
+
+     - Thank the listeners for their time and invite them to delve deeper into the topic.
+
+3. **Characters**
+
+   - **Male Speaker**
+
+     - Inquisitive and reflective.
+
+     - Asks questions and seeks clarification.
+
+   - **Female Speaker**
+
+     - Engaging and explanatory.
+
+     - Provides detailed explanations and insights.
+
+   - **Both Speakers**
+
+     - Knowledgeable about the topic.
+
+     - Maintain a friendly and conversational rapport.
+
+4. **Style and Tone**
+
+   - Maintain consistency with earlier sections.
+
+   - Provide a sense of closure and completeness.
+
+5. **Content**
+
+   - Tie together the main points discussed throughout the conversation.
+
+   - Ensure accuracy and avoid disallowed content.
+
+---
+
+**Note**
+
+- Previous Turns 1-74 covered the Introduction, Background, Key Findings, and Implications.
+
+- This is the final section of the transcript.
+
+- Ensure the conclusion feels connected to the entire conversation.
+
+---
+
+**General Notes for All Sections**
+
+- **Continuity**
+
+  - Be aware of the content from previous sections to maintain a coherent and logical flow.
+
+  - Reference previous points where appropriate to reinforce continuity.
+
+- **Consistency**
+
+  - Maintain consistent character traits and tone throughout the conversation.
+
+- **Avoid Disallowed Content**
+
+  - Ensure all content is appropriate for a general audience.
+
+---
+
+**Examples as reference for style of the conversation:**
+
+$all_transcripts
+
+---
+
+Previous content:
+
+$previous_content

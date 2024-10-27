@@ -1,0 +1,22 @@
+{
+    "English": {
+        "code": "en-US",
+        "male_voice": "en-US-Journey-D",
+        "female_voice": "en-US-Journey-F"
+    },
+    "German": {
+        "code": "de-DE",
+        "male_voice": "de-DE-Journey-D",
+        "female_voice": "de-DE-Journey-F"
+    },
+    "Italian": {
+        "code": "it-IT",
+        "male_voice": "it-IT-Journey-D",
+        "female_voice": "it-IT-Journey-F"
+    },
+    "French": {
+        "code": "fr-FR",
+        "male_voice": "fr-FR-Journey-D",
+        "female_voice": "fr-FR-Journey-F"
+    }
+}

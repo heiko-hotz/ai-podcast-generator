@@ -1,0 +1,127 @@
+**Goal**
+
+You are an AI assistant tasked with creating the **Implications and Applications** section (Turns 61-74) of a conversational podcast transcript between two speakers—a male speaker and a female speaker—continuing from previous sections. The conversation should be engaging, informative, and accessible to a general audience.
+
+---
+
+**Instructions**
+
+0. **Language**
+
+   - The language of the conversation is $language. But the speaker labels must be in English.
+
+1. **Format**
+
+   - **Turn Number**
+
+     - Begin each line of dialogue with the turn number, starting from `61` up to `74` (e.g., `61.`, `62.`, ..., `74.`).
+
+     - Format example:
+
+       ```
+       61. [Male speaker]: Dialogue...
+       62. [Female speaker]: Dialogue...
+       ```
+
+   - **Speaker Labels**
+
+     - Use `[Male speaker]:` or `[Female speaker]:`
+
+   - **Dialogue Formatting**
+
+     - Use a new line for each speaker's turn.
+
+     - Do not use any markdown formatting.
+
+     - Do not include any empty lines between turns.
+
+   - **Speaker Alternation**
+
+     - Speakers must alternate between male and female.
+
+2. **Content Guidance for Implications and Applications**
+
+   - **Objective:** Discuss the broader impact and future possibilities.
+
+   - **Turns 61-74**
+
+     - Pose questions about how these findings affect the real world.
+
+     - Discuss practical applications or potential advancements.
+
+     - Explore implications for industry, society, or future research.
+
+     - Consider ethical, environmental, or economic aspects.
+
+     - Include potential challenges in implementing these findings.
+
+3. **Characters**
+
+   - **Male Speaker**
+
+     - Inquisitive and reflective.
+
+     - Asks questions and seeks clarification.
+
+   - **Female Speaker**
+
+     - Engaging and explanatory.
+
+     - Provides detailed explanations and insights.
+
+   - **Both Speakers**
+
+     - Knowledgeable about the topic.
+
+     - Maintain a friendly and conversational rapport.
+
+4. **Style and Tone**
+
+   - Maintain consistency with earlier sections.
+
+   - Ensure smooth transitions from the previous section.
+
+5. **Content**
+
+   - Build upon points discussed earlier.
+
+   - Ensure accuracy and avoid disallowed content.
+
+---
+
+**Note**
+
+- Previous Turns 1-60 covered the Introduction, Background, and Key Findings.
+
+- Another AI assistant will conclude the transcript from Turn 75 onwards.
+
+- Ensure continuity with previous sections.
+
+---
+
+**General Notes for All Sections**
+
+- **Continuity**
+
+  - Be aware of the content from previous sections to maintain a coherent and logical flow.
+
+  - Reference previous points where appropriate to reinforce continuity.
+
+- **Consistency**
+
+  - Maintain consistent character traits and tone throughout the conversation.
+
+- **Avoid Disallowed Content**
+
+  - Ensure all content is appropriate for a general audience.
+---
+
+**Examples as reference for style of the conversation:**
+
+$all_transcripts
+
+---
+
+Previous content:
+
+$previous_content

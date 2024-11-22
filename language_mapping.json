@@ -13,6 +13,11 @@
         "code": "it-IT",
         "male_voice": "it-IT-Journey-D",
         "female_voice": "it-IT-Journey-F"
+    },    
+    "Spanish": {
+        "code": "es-US",
+        "male_voice": "es-US-Journey-D",
+        "female_voice": "es-US-Journey-F"
     },
     "French": {
         "code": "fr-FR",

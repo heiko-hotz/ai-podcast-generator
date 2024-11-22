@@ -62,24 +62,48 @@ def synthesize_speech(text: str, voice_params: texttospeech.VoiceSelectionParams
     )
     return audio_segment
 
-def generate_audio_from_transcript(transcript_path: str, male_voice: str, female_voice: str, language: str, output_audio: str):
+def load_language_mapping():
     """
-    Generates audio from the transcript using specified voices.
+    Loads the language mapping configuration from JSON file.
+    
+    Returns:
+        dict: Language mapping configuration
+    """
+    with open('language_mapping.json', 'r') as f:
+        return json.load(f)
+
+def generate_audio_from_transcript(transcript_path: str, language: str, output_audio: str):
+    """
+    Generates audio from the transcript using voices specified in language mapping.
 
     Args:
         transcript_path (str): The path to the transcript file.
-        male_voice (str): The voice name for the male speaker.
-        female_voice (str): The voice name for the female speaker.
-        language (str): The language code for the voices.
+        language (str): The language name (e.g., "English", "German").
         output_audio (str): The output audio file path.
     """
+    # Load language mapping and get voice configuration
+    language_mapping = load_language_mapping()
+    if language not in language_mapping:
+        raise ValueError(f"Unsupported language: {language}")
+    
+    language_config = language_mapping[language]
+    language_code = language_config["code"]
+    male_voice = language_config["male_voice"]
+    female_voice = language_config["female_voice"]
+
     audio_config = texttospeech.AudioConfig(
         audio_encoding=texttospeech.AudioEncoding.LINEAR16,
     )
 
     voices = {
-        "[Male speaker]": texttospeech.VoiceSelectionParams(language_code=language, name=male_voice),
-        "[Female speaker]": texttospeech.VoiceSelectionParams(language_code=language, name=female_voice)
+        "[Male speaker]": texttospeech.VoiceSelectionParams(
+            language_code=language_code, 
+            name=male_voice
+        ),
+        "[Female speaker]": texttospeech.VoiceSelectionParams(
+            language_code=language_code, 
+            name=female_voice
+        )
     }
 
     with open(transcript_path, 'r') as f:
@@ -117,31 +141,14 @@ def generate_audio_from_transcript(transcript_path: str, male_voice: str, female
 def main():
     parser = argparse.ArgumentParser(description="Generate audio from a podcast transcript.")
     parser.add_argument('transcript_path', type=str, help='Path to the transcript text file.')
-    parser.add_argument('--language', type=str, default='en-US', help='Language code for the voices.')
-    parser.add_argument('--male_voice', type=str, default='', help='Voice name for male speaker.')
-    parser.add_argument('--female_voice', type=str, default='', help='Voice name for female speaker.')
+    parser.add_argument('--language', type=str, default='English', help='Language for the voices (e.g., English, German).')
     parser.add_argument('--output_audio', type=str, default='podcast.mp3', help='Output audio file path.')
 
     args = parser.parse_args()
-
-    if not args.male_voice or not args.female_voice:
-        if args.language == 'en-US':
-            male_voice = "en-US-Casual-K"
-            female_voice = "en-US-Journey-O"
-        elif args.language == 'de-DE':
-            male_voice = "de-DE-Wavenet-B"
-            female_voice = "de-DE-Wavenet-A"
-        else:
-            print("Please provide valid male and female voice names for the specified language.")
-            return
-    else:
-        male_voice = args.male_voice
-        female_voice = args.female_voice
-
-    generate_audio_from_transcript(args.transcript_path, male_voice, female_voice, args.language, args.output_audio)
+    generate_audio_from_transcript(args.transcript_path, args.language, args.output_audio)
 
 if __name__ == "__main__":
     main()
 
 # Example usage:
-# python audio_generation.py ./data/podcast_script.txt --language en-US --male_voice en-US-Casual-K --female_voice en-US-Journey-O --output_audio ./data/podcast.mp3
+# python audio_generation.py ./data/podcast_script.txt --language English --output_audio ./data/podcast.mp3

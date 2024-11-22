@@ -24,16 +24,13 @@ The subtopic relates to the main topic of the paper as follows: $subtopic_relati
      - Format example:
 
        ```
-       1. [Male speaker]: Dialogue...
-       2. [Female speaker]: Dialogue...
+       7. [S]: Dialogue...
+       8. [R]: Dialogue...
        ```
 
    - **Speaker Labels**
 
-     - After the turn number, include the speaker label in square brackets followed by a colon:
-
-       - `[Male speaker]:` or `[Female speaker]:`
-
+     - Use `[S]:` or `[R]:`
    - **Dialogue Formatting**
 
      - Use a new line for each speaker's turn.
@@ -90,8 +87,18 @@ The subtopic relates to the main topic of the paper as follows: $subtopic_relati
 
    - Use clear, concise language, avoiding jargon.
 
-   - Include natural expressions and colloquialisms to mimic natural speech.
+   - Include natural speech patterns to make the conversation sound authentic:
+     - Add thoughtful pauses (e.g., "Well...", "Hmm...")
+     - Include occasional stutters or self-corrections (e.g., "It's- it's like", "What I mean- what I'm trying to say is")
+     - Use filler words naturally (e.g., "um", "uh", "you know")
+     - Add verbal processing moments (e.g., "let me think about this", "how should I put this")
 
+   - Include natural expressions and colloquialisms to mimic real conversation.
+
+   - Balance disfluencies:
+     - Speaker S (Host): More frequent disfluencies when asking complex questions or processing new information
+     - Speaker R (Guest): Occasional disfluencies when explaining complex concepts or thinking through implications
+     - Don't overuse - aim for natural rhythm rather than constant interruption
 5. **Content**
 
    - Ensure the information is accurate and up-to-date.

@@ -63,13 +63,18 @@ def compile_transcripts(transcripts_dir: Path) -> str:
     """
     all_transcripts = ""
 
-    for filename in sorted(transcripts_dir.glob("*.txt")):
-        title = filename.stem.replace("-", " ")
+    # for filename in sorted(transcripts_dir.glob("*.txt")):
+    #     title = filename.stem.replace("-", " ")
 
-        with open(filename, "r") as file:
-            content = file.read()
+    #     with open(filename, "r") as file:
+    #         content = file.read()
 
-        all_transcripts += f"# {title}\n\n{content}\n\n{'='*50}\n\n"
+    #     all_transcripts += f"# {title}\n\n{content}\n\n{'='*50}\n\n"
+    
+    # use bitesized.txt as a fallback
+    if len(all_transcripts) == 0:
+        with open("data/transcripts/bitesized.txt", "r") as file:
+            all_transcripts = file.read()
 
     if len(all_transcripts) == 0:
         print("No transcripts found. Proceeding without previous transcripts.")

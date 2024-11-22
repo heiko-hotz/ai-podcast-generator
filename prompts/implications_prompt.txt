@@ -17,15 +17,16 @@ You are an AI assistant tasked with creating the **Implications and Applications
      - Begin each line of dialogue with the turn number, starting from `61` up to `74` (e.g., `61.`, `62.`, ..., `74.`).
 
      - Format example:
+     - Format example:
 
        ```
-       61. [Male speaker]: Dialogue...
-       62. [Female speaker]: Dialogue...
+       7. [S]: Dialogue...
+       8. [R]: Dialogue...
        ```
 
    - **Speaker Labels**
 
-     - Use `[Male speaker]:` or `[Female speaker]:`
+     - Use `[S]:` or `[R]:`
 
    - **Dialogue Formatting**
 
@@ -80,6 +81,19 @@ You are an AI assistant tasked with creating the **Implications and Applications
    - Maintain consistency with earlier sections.
 
    - Ensure smooth transitions from the previous section.
+  
+   - Include natural speech patterns to make the conversation sound authentic:
+     - Add thoughtful pauses (e.g., "Well...", "Hmm...")
+     - Include occasional stutters or self-corrections (e.g., "It's- it's like", "What I mean- what I'm trying to say is")
+     - Use filler words naturally (e.g., "um", "uh", "you know")
+     - Add verbal processing moments (e.g., "let me think about this", "how should I put this")
+
+   - Include natural expressions and colloquialisms to mimic real conversation.
+
+   - Balance disfluencies:
+     - Speaker S (Host): More frequent disfluencies when asking complex questions or processing new information
+     - Speaker R (Guest): Occasional disfluencies when explaining complex concepts or thinking through implications
+     - Don't overuse - aim for natural rhythm rather than constant interruption
 
 5. **Content**
 

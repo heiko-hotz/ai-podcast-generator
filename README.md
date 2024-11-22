@@ -1,8 +1,8 @@
-# Fabulae 
+# AI Podcast Generator
 
 ## Overview
 
-Fabulae unleashes the knowledge trapped in your PDFs! Harnessing the power of Gemini and text-to-speech from Google Cloud, Fabulae transforms static documents into captivating audio experiences. Imagine your research papers, reports, or even ebooks springing to life as dynamic podcasts, complete with natural-sounding dialogue and engaging narration.  No more eye strain, just pure auditory bliss! Fabulae even provides a full transcript, so you can follow along or dive deeper into the content.
+AI Podcast Generator (AIPG) unleashes the knowledge trapped in your PDFs! Harnessing the power of Gemini and text-to-speech from Google Cloud, AIPG transforms static documents into captivating audio experiences. Imagine your research papers, reports, or even ebooks springing to life as dynamic podcasts, complete with natural-sounding dialogue and engaging narration.  No more eye strain, just pure auditory bliss! AIPG even provides a full transcript, so you can follow along or dive deeper into the content.
 
 ## 🌟 Key Features
 

@@ -20,10 +20,13 @@ from pathlib import Path
 
 import streamlit as st
 from tqdm import tqdm
+import requests
 
 from topic_extraction import extract_main_topics
 from script_generation import generate_full_podcast_script
 from audio_generation import generate_audio_from_transcript
+
+HOST = os.getenv("HOST", "http://localhost:8000")
 
 def initialize_session_state():
     """
@@ -70,7 +73,16 @@ def main():
 
         if st.session_state.topics is None:
             with st.spinner("Extracting main topics..."):
-                topics_data = extract_main_topics(tmp_file_path, 3)
+                #topics_data = extract_main_topics(tmp_file_path, 3)
+                request_values = {
+                    "pdf_path": tmp_file_path,
+                    "n": 3,
+                }
+                topics_data = requests.post(
+                    f"{HOST}/extract_main_topics/",
+                    json=request_values,
+                    headers={'Content-Type': 'application/json'}
+                )
                 st.session_state.topics = topics_data.get('subtopics', [])
 
         st.subheader("Topics")

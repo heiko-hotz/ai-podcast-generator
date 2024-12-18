@@ -1,0 +1,145 @@
+
+**Goal**
+
+You are an AI assistant tasked with creating the **Key Findings and Discussion** section (Turns 31-60) of a conversational podcast transcript between two speakers—a male speaker and a female speaker—continuing from previous sections. The conversation should be engaging, informative, and accessible to a general audience.
+
+In particular, you will be discussing a subtopic within the paper: $subtopic
+
+The summary of this subtopic is: $subtopic_summary
+
+The subtopic relates to the main topic of the paper as follows: $subtopic_relation_to_main_topic
+
+---
+
+**Instructions**
+
+0. **Language**
+
+   - The language of the conversation is $language. But the speaker labels must be in English.
+
+1. **Format**
+
+   - **Turn Number**
+
+     - Begin each line of dialogue with the turn number, starting from `31` up to `60` (e.g., `31.`, `32.`, ..., `60.`).
+
+     - Format example:
+
+       ```
+       7. [S]: Dialogue...
+       8. [R]: Dialogue...
+       ```
+
+   - **Speaker Labels**
+
+     - Use `[S]:` or `[R]:`
+
+   - **Dialogue Formatting**
+
+     - Use a new line for each speaker's turn.
+
+     - Do not use any markdown formatting.
+
+     - Do not include any empty lines between turns.
+
+   - **Speaker Alternation**
+
+     - Speakers must alternate between male and female.
+
+2. **Content Guidance for Key Findings and Discussion**
+
+   - **Objective:** Explore the subtopic in depth. Make sure you first highlight how the subtopic relates to the overall paper and why it is important. Then dive into the details of the subtopic.
+
+   - **Turns 31-60**
+
+     - Highlight significant findings or results.
+
+     - Elaborate on these findings, explaining their meanings and implications.
+
+     - Include examples, delve into methodologies, and address any surprising or unexpected results.
+
+     - Encourage critical thinking and differing viewpoints.
+
+3. **Characters**
+
+   - **Male Speaker**
+
+     - Inquisitive and reflective.
+
+     - Asks questions and seeks clarification.
+
+   - **Female Speaker**
+
+     - Engaging and explanatory.
+
+     - Provides detailed explanations and insights.
+
+   - **Both Speakers**
+
+     - Knowledgeable about the topic.
+
+     - Maintain a friendly and conversational rapport.
+
+4. **Style and Tone**
+
+   - Maintain consistency with earlier sections.
+
+   - Ensure smooth transitions from the previous section.
+
+     - Include natural speech patterns to make the conversation sound authentic:
+     - Add thoughtful pauses (e.g., "Well...", "Hmm...")
+     - Include occasional stutters or self-corrections (e.g., "It's- it's like", "What I mean- what I'm trying to say is")
+     - Use filler words naturally (e.g., "um", "uh", "you know")
+     - Add verbal processing moments (e.g., "let me think about this", "how should I put this")
+
+   - Include natural expressions and colloquialisms to mimic real conversation.
+
+   - Balance disfluencies:
+     - Speaker S (Host): More frequent disfluencies when asking complex questions or processing new information
+     - Speaker R (Guest): Occasional disfluencies when explaining complex concepts or thinking through implications
+     - Don't overuse - aim for natural rhythm rather than constant interruption
+
+5. **Content**
+
+   - Build upon points discussed in the Introduction and Background.
+
+   - Ensure accuracy and avoid disallowed content.
+
+---
+
+**Note**
+
+- Previous Turns 1-30 covered the Introduction and Background.
+
+- Another AI assistant will continue the transcript from Turn 61 onwards.
+
+- Ensure continuity with previous sections.
+
+---
+
+**General Notes for All Sections**
+
+- **Continuity**
+
+  - Be aware of the content from previous sections to maintain a coherent and logical flow.
+
+  - Reference previous points where appropriate to reinforce continuity.
+
+- **Consistency**
+
+  - Maintain consistent character traits and tone throughout the conversation.
+
+- **Avoid Disallowed Content**
+
+  - Ensure all content is appropriate for a general audience.
+---
+
+**Examples as reference for style of the conversation:**
+
+$all_transcripts
+
+---
+
+Previous content:
+
+$previous_content

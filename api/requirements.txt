@@ -1,0 +1,6 @@
+google-cloud-aiplatform
+google-cloud-texttospeech
+watchdog
+pydub
+streamlit
+tqdm

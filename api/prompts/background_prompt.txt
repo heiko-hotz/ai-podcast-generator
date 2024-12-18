@@ -1,0 +1,138 @@
+**Goal**
+
+You are an AI assistant tasked with creating the **Background** section (Turns 7-30) of a conversational podcast transcript between two speakers—a male speaker and a female speaker—continuing from a previous introduction about the attached research paper. The conversation should be engaging, informative, and accessible to a general audience.
+
+---
+
+**Instructions**
+
+0. **Language**
+
+   - The language of the conversation is $language. But the speaker labels must be in English.
+
+1. **Format**
+
+   - **Turn Number**
+
+     - Begin each line of dialogue with the turn number, starting from `7` up to `30` (e.g., `7.`, `8.`, ..., `30.`).
+
+     - Format example:
+
+       ```
+       7. [S]: Dialogue...
+       8. [R]: Dialogue...
+       ```
+
+   - **Speaker Labels**
+
+     - Use `[S]:` or `[R]:`
+
+   - **Dialogue Formatting**
+
+     - Use a new line for each speaker's turn.
+
+     - Do not use any markdown formatting.
+
+     - Do not include any empty lines between turns.
+
+   - **Speaker Alternation**
+
+     - Speakers must alternate between male and female.
+
+2. **Content Guidance for Background**
+
+   - **Objective:** Provide essential context and foundational knowledge.
+
+   - **Turns 7-30**
+
+     - Introduce key concepts or theories that underpin the topic.
+
+     - Ask for clarification or provide simplified explanations.
+
+     - Cover important background information such as definitions, historical developments, or foundational studies.
+
+     - Use analogies where appropriate.
+
+3. **Characters**
+
+   - **Male Speaker**
+
+     - Inquisitive and reflective.
+
+     - Asks questions and seeks clarification.
+
+   - **Female Speaker**
+
+     - Engaging and explanatory.
+
+     - Provides detailed explanations and insights.
+
+   - **Both Speakers**
+
+     - Knowledgeable about the topic.
+
+     - Maintain a friendly and conversational rapport.
+
+4. **Style and Tone**
+
+   - Maintain consistency with the Introduction.
+
+   - Ensure smooth transitions from the previous section.
+   - Include natural speech patterns to make the conversation sound authentic:
+     - Add thoughtful pauses (e.g., "Well...", "Hmm...")
+     - Include occasional stutters or self-corrections (e.g., "It's- it's like", "What I mean- what I'm trying to say is")
+     - Use filler words naturally (e.g., "um", "uh", "you know")
+     - Add verbal processing moments (e.g., "let me think about this", "how should I put this")
+
+   - Include natural expressions and colloquialisms to mimic real conversation.
+
+   - Balance disfluencies:
+     - Speaker S (Host): More frequent disfluencies when asking complex questions or processing new information
+     - Speaker R (Guest): Occasional disfluencies when explaining complex concepts or thinking through implications
+     - Don't overuse - aim for natural rhythm rather than constant interruption
+
+
+5. **Content**
+
+   - Build upon the points discussed in the Introduction.
+
+   - Ensure accuracy and avoid disallowed content.
+
+---
+
+**Note**
+
+- Previous Turns 1-6 covered the Introduction.
+
+- Another AI assistant will continue the transcript from Turn 31 onwards.
+
+- Ensure continuity with the previous section.
+
+---
+
+**General Notes for All Sections**
+
+- **Continuity**
+
+  - Be aware of the content from previous sections to maintain a coherent and logical flow.
+
+  - Reference previous points where appropriate to reinforce continuity.
+
+- **Consistency**
+
+  - Maintain consistent character traits and tone throughout the conversation.
+
+- **Avoid Disallowed Content**
+
+  - Ensure all content is appropriate for a general audience.
+---
+
+**Examples as reference for style of the conversation:**
+
+$all_transcripts
+
+---
+
+Previous content:
+
+$previous_content

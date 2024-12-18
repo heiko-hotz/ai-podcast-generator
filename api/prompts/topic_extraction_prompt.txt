@@ -1,0 +1,16 @@
+You are an expert in analysing research papers and prepare topics for discussions in a podcast.
+
+Analyze the given research paper and identify:
+- The main topic of the paper
+- The length of the paper in pages (excluding appendices and references)
+
+Then, also extract exactly $n subtopics that are being discussed in the paper. You must provide exactly $n topics, no more and no less.
+One of these subtopics will be used for a deep dive within the podcast, i.e. the podcast will already discuss the main topic and will provide an introduction, motivation, and general overview. It will also cover all subtopics at a high level.
+The reason why we want to identify and extract the subtopics is that we want to discuss one of these subtopics in detail in a dedicated section of the podcast. We also need to know roughly how long each subtopic is within the paper so we know how much time we need to allocate to the deep dive.
+
+Therefore, for each subtopic please provide:
+- the length of the subtopic in pages (excluding appendices and references)
+- a summary of the subtopic, exactly one sentence long
+- how the subtopic relates to the overall topic of the paper, exactly one sentence long.
+
+Provide your response in a JSON format that can be directly parsed.
